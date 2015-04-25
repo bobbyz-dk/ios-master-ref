@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2221F6041ACE9D2000E2ED58 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221F6011ACE9D2000E2ED58 /* TwitterKit.framework */; };
+		2221F6051ACE9D2100E2ED58 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2221F6021ACE9D2000E2ED58 /* TwitterKitResources.bundle */; };
+		2221F6061ACE9D2100E2ED58 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221F6031ACE9D2000E2ED58 /* Fabric.framework */; };
+		2221F6091ACEC4D000E2ED58 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221F6081ACEC4D000E2ED58 /* TwitterViewController.m */; };
+		2221F60B1AD3140900E2ED58 /* TwitterApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221F60A1AD3140800E2ED58 /* TwitterApi.m */; };
+		2221F60F1AD4606D00E2ED58 /* RestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221F60E1AD4606D00E2ED58 /* RestViewController.m */; };
+		2221F6121AD461ED00E2ED58 /* RestApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221F6111AD461ED00E2ED58 /* RestApi.m */; };
+		2221F6151AD4646D00E2ED58 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221F6141AD4646D00E2ED58 /* Comment.m */; };
 		22F4BCAA1AB59554002092A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F4BCA91AB59554002092A1 /* main.m */; };
 		22F4BCAD1AB59554002092A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F4BCAC1AB59554002092A1 /* AppDelegate.m */; };
 		22F4BCB01AB59554002092A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F4BCAF1AB59554002092A1 /* ViewController.m */; };
@@ -14,6 +22,9 @@
 		22F4BCB51AB59554002092A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F4BCB41AB59554002092A1 /* Images.xcassets */; };
 		22F4BCB81AB59554002092A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F4BCB61AB59554002092A1 /* LaunchScreen.xib */; };
 		22F4BCC41AB59554002092A1 /* iOSMasterRefTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F4BCC31AB59554002092A1 /* iOSMasterRefTests.m */; };
+		22F4BCCE1AB5A873002092A1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F4BCCD1AB5A873002092A1 /* libsqlite3.dylib */; };
+		22F4BCD11AB5A8E3002092A1 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F4BCD01AB5A8E3002092A1 /* DBManager.m */; };
+		22F4BCD51AB5BEDB002092A1 /* tekst.db in Resources */ = {isa = PBXBuildFile; fileRef = 22F4BCD41AB5BEDB002092A1 /* tekst.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +38,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2221F6011ACE9D2000E2ED58 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
+		2221F6021ACE9D2000E2ED58 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		2221F6031ACE9D2000E2ED58 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		2221F6071ACEC4D000E2ED58 /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
+		2221F6081ACEC4D000E2ED58 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
+		2221F60A1AD3140800E2ED58 /* TwitterApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterApi.m; sourceTree = "<group>"; };
+		2221F60C1AD3142200E2ED58 /* TwitterApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterApi.h; sourceTree = "<group>"; };
+		2221F60D1AD4606D00E2ED58 /* RestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestViewController.h; sourceTree = "<group>"; };
+		2221F60E1AD4606D00E2ED58 /* RestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestViewController.m; sourceTree = "<group>"; };
+		2221F6101AD461ED00E2ED58 /* RestApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestApi.h; sourceTree = "<group>"; };
+		2221F6111AD461ED00E2ED58 /* RestApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestApi.m; sourceTree = "<group>"; };
+		2221F6131AD4646D00E2ED58 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		2221F6141AD4646D00E2ED58 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		22F4BCA41AB59554002092A1 /* iOSMasterRef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMasterRef.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F4BCA81AB59554002092A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F4BCA91AB59554002092A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +64,10 @@
 		22F4BCBD1AB59554002092A1 /* iOSMasterRefTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMasterRefTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F4BCC21AB59554002092A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F4BCC31AB59554002092A1 /* iOSMasterRefTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSMasterRefTests.m; sourceTree = "<group>"; };
+		22F4BCCD1AB5A873002092A1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		22F4BCCF1AB5A8E3002092A1 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		22F4BCD01AB5A8E3002092A1 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		22F4BCD41AB5BEDB002092A1 /* tekst.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = tekst.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +75,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F4BCCE1AB5A873002092A1 /* libsqlite3.dylib in Frameworks */,
+				2221F6041ACE9D2000E2ED58 /* TwitterKit.framework in Frameworks */,
+				2221F6061ACE9D2100E2ED58 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +94,10 @@
 		22F4BC9B1AB59554002092A1 = {
 			isa = PBXGroup;
 			children = (
+				22F4BCD41AB5BEDB002092A1 /* tekst.db */,
+				22F4BCCF1AB5A8E3002092A1 /* DBManager.h */,
+				22F4BCD01AB5A8E3002092A1 /* DBManager.m */,
+				22F4BCCD1AB5A873002092A1 /* libsqlite3.dylib */,
 				22F4BCA61AB59554002092A1 /* iOSMasterRef */,
 				22F4BCC01AB59554002092A1 /* iOSMasterRefTests */,
 				22F4BCA51AB59554002092A1 /* Products */,
@@ -81,6 +116,9 @@
 		22F4BCA61AB59554002092A1 /* iOSMasterRef */ = {
 			isa = PBXGroup;
 			children = (
+				2221F6011ACE9D2000E2ED58 /* TwitterKit.framework */,
+				2221F6021ACE9D2000E2ED58 /* TwitterKitResources.bundle */,
+				2221F6031ACE9D2000E2ED58 /* Fabric.framework */,
 				22F4BCAB1AB59554002092A1 /* AppDelegate.h */,
 				22F4BCAC1AB59554002092A1 /* AppDelegate.m */,
 				22F4BCAE1AB59554002092A1 /* ViewController.h */,
@@ -89,6 +127,16 @@
 				22F4BCB41AB59554002092A1 /* Images.xcassets */,
 				22F4BCB61AB59554002092A1 /* LaunchScreen.xib */,
 				22F4BCA71AB59554002092A1 /* Supporting Files */,
+				2221F6071ACEC4D000E2ED58 /* TwitterViewController.h */,
+				2221F6081ACEC4D000E2ED58 /* TwitterViewController.m */,
+				2221F60A1AD3140800E2ED58 /* TwitterApi.m */,
+				2221F60C1AD3142200E2ED58 /* TwitterApi.h */,
+				2221F60D1AD4606D00E2ED58 /* RestViewController.h */,
+				2221F60E1AD4606D00E2ED58 /* RestViewController.m */,
+				2221F6101AD461ED00E2ED58 /* RestApi.h */,
+				2221F6111AD461ED00E2ED58 /* RestApi.m */,
+				2221F6131AD4646D00E2ED58 /* Comment.h */,
+				2221F6141AD4646D00E2ED58 /* Comment.m */,
 			);
 			path = iOSMasterRef;
 			sourceTree = "<group>";
@@ -129,6 +177,7 @@
 				22F4BCA01AB59554002092A1 /* Sources */,
 				22F4BCA11AB59554002092A1 /* Frameworks */,
 				22F4BCA21AB59554002092A1 /* Resources */,
+				2221F6001ACE9C8000E2ED58 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -168,6 +217,7 @@
 				TargetAttributes = {
 					22F4BCA31AB59554002092A1 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = H4JV8Q2668;
 					};
 					22F4BCBC1AB59554002092A1 = {
 						CreatedOnToolsVersion = 6.2;
@@ -202,6 +252,8 @@
 				22F4BCB31AB59554002092A1 /* Main.storyboard in Resources */,
 				22F4BCB81AB59554002092A1 /* LaunchScreen.xib in Resources */,
 				22F4BCB51AB59554002092A1 /* Images.xcassets in Resources */,
+				22F4BCD51AB5BEDB002092A1 /* tekst.db in Resources */,
+				2221F6051ACE9D2100E2ED58 /* TwitterKitResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +266,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2221F6001ACE9C8000E2ED58 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 45b2f12c2419d50a91d0f74a569633e4724e3d5a 5169a763f31b37bc0164f11734e18092bfb8bacf22e7f44f90b631774d1f0453";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22F4BCA01AB59554002092A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,7 +289,13 @@
 			files = (
 				22F4BCB01AB59554002092A1 /* ViewController.m in Sources */,
 				22F4BCAD1AB59554002092A1 /* AppDelegate.m in Sources */,
+				2221F60F1AD4606D00E2ED58 /* RestViewController.m in Sources */,
 				22F4BCAA1AB59554002092A1 /* main.m in Sources */,
+				2221F6121AD461ED00E2ED58 /* RestApi.m in Sources */,
+				2221F6091ACEC4D000E2ED58 /* TwitterViewController.m in Sources */,
+				2221F60B1AD3140900E2ED58 /* TwitterApi.m in Sources */,
+				2221F6151AD4646D00E2ED58 /* Comment.m in Sources */,
+				22F4BCD11AB5A8E3002092A1 /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +417,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iOSMasterRef/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +431,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iOSMasterRef/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +494,7 @@
 				22F4BCC91AB59554002092A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22F4BCCA1AB59554002092A1 /* Build configuration list for PBXNativeTarget "iOSMasterRefTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +503,7 @@
 				22F4BCCC1AB59554002092A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

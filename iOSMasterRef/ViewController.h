@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UITextField *txtTekst;
+
+- (IBAction)btnGemTekst:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UITableView *tblTekst;
 
 @end
 
