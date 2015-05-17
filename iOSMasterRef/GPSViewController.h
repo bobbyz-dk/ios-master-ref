@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@import CoreLocation;
 
-@interface GPSViewController : UIViewController
+@interface GPSViewController : UIViewController <CLLocationManagerDelegate>
+
+@property (weak, nonatomic) IBOutlet UILabel *lblLongitude;
+@property (weak, nonatomic) IBOutlet UILabel *lblLatitude;
+
+- (IBAction)btnShowLocation:(id)sender;
 
 @end

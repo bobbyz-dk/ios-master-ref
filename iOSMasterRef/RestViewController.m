@@ -16,7 +16,13 @@
 
 @end
 
-@implementation RestViewController
+@implementation RestViewController {
+    SocketIO *socketIO;
+}
+
+NSString *wsUrlString = @"http://192.168.1.103:2403";
+NSString *wsHost = @"192.168.1.103";
+NSInteger wsPort = 2403;
 
 @synthesize txtComment;
 @synthesize txtEmail;
@@ -33,7 +39,25 @@ RestApi *rest;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCommentPosted:) name:@"CommentPostedEvent" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCommentReceived:) name:@"CommentsReceivedEvent" object:nil];
     
+    socketIO = [[SocketIO alloc] initWithDelegate:self];
+    //[socketIO setResourceName:@"comment"];
     
+    NSDictionary *properties = [NSDictionary dictionaryWithObjectsAndKeys:
+                                wsHost, NSHTTPCookieDomain,
+                                @"/", NSHTTPCookiePath,
+                                @"auth", NSHTTPCookieName,
+                                @"12345678123456768", NSHTTPCookieValue,
+                                nil];
+    NSHTTPCookie *cookie = [NSHTTPCookie cookieWithProperties:properties];
+    NSArray *cookies = [NSArray arrayWithObjects:cookie, nil];
+    
+    //socketIO.cookies = cookies;
+    
+    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"transport", @"polling",
+                                nil];
+    
+    [socketIO connectToHost:wsHost onPort:wsPort withParams:params];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -88,6 +112,26 @@ RestApi *rest;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [[self.arrComments objectAtIndex:indexPath.row] objectForKey:@"created"]];
     
     return cell;
+}
+
+- (void)socketIODidConnect:(SocketIO *)socket {
+    NSLog(@"Socket.IO connected.");
+}
+
+- (void)socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet {
+    NSLog(@"Socket.IO didReceiveEvent.");
+}
+
+-(void)socketIO:(SocketIO *)socket onError:(NSError *)error {
+    if ([error code] == SocketIOUnauthorized) {
+        NSLog(@"Socket.IO Not authorized.");
+    } else {
+        NSLog(@"Socket.IO Err: %@.", error);
+    }
+}
+
+- (void)socketIODidDisconnect:(SocketIO *)socket disconnectedWithError:(NSError *)error {
+    NSLog(@"Socket.IO disconnected. Err: %@.", error);
 }
 
 @end

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SocketIO.h"
 
-@interface RestViewController : UIViewController <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface RestViewController : UIViewController <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, SocketIODelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *txtComment;
 @property (weak, nonatomic) IBOutlet UITextField *txtEmail;
