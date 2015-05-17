@@ -1,0 +1,31 @@
+Podfile.lock
+Pods/Headers/Private/SocketRocket/NSData+SRB64Additions.h
+Pods/Headers/Private/SocketRocket/SRWebSocket.h
+Pods/Headers/Private/SocketRocket/base64.h
+Pods/Headers/Public/SocketRocket/NSData+SRB64Additions.h
+Pods/Headers/Public/SocketRocket/SRWebSocket.h
+Pods/Headers/Public/SocketRocket/base64.h
+Pods/Manifest.lock
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/Pods.xcodeproj/xcuserdata/bobbynielsen.xcuserdatad/xcschemes/Pods-SocketRocket.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/bobbynielsen.xcuserdatad/xcschemes/Pods.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/bobbynielsen.xcuserdatad/xcschemes/xcschememanagement.plist
+Pods/SocketRocket/LICENSE
+Pods/SocketRocket/README.rst
+Pods/SocketRocket/SocketRocket/NSData+SRB64Additions.h
+Pods/SocketRocket/SocketRocket/NSData+SRB64Additions.m
+Pods/SocketRocket/SocketRocket/SRWebSocket.h
+Pods/SocketRocket/SocketRocket/SRWebSocket.m
+Pods/SocketRocket/SocketRocket/base64.c
+Pods/SocketRocket/SocketRocket/base64.h
+Pods/Target Support Files/Pods-SocketRocket/Pods-SocketRocket-Private.xcconfig
+Pods/Target Support Files/Pods-SocketRocket/Pods-SocketRocket-dummy.m
+Pods/Target Support Files/Pods-SocketRocket/Pods-SocketRocket-prefix.pch
+Pods/Target Support Files/Pods-SocketRocket/Pods-SocketRocket.xcconfig
+Pods/Target Support Files/Pods/Pods-acknowledgements.markdown
+Pods/Target Support Files/Pods/Pods-acknowledgements.plist
+Pods/Target Support Files/Pods/Pods-dummy.m
+Pods/Target Support Files/Pods/Pods-environment.h
+Pods/Target Support Files/Pods/Pods-resources.sh
+Pods/Target Support Files/Pods/Pods.debug.xcconfig
+Pods/Target Support Files/Pods/Pods.release.xcconfig
